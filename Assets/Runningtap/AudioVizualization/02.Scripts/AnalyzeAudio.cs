@@ -15,19 +15,19 @@ namespace Runningtap
         public float[] AudioBand, AudioBandBuffer, stereoBandSpread, stereoBandBufferSpread;
         [HideInInspector]
         public float Amplitude, AmplitudeBuffer;
-    
-        private float[] samplesLeft = new float[512];
-        private float[] samplesRight = new float[512];
 
-        private float[] frequencyBand;
-        private float[] bandBuffer;
-        private float[] bufferDecrease;
-        private float[] freqBandHighest;
+        [SerializeField] private float[] samplesLeft = new float[512];
+        [SerializeField] private float[] samplesRight = new float[512];
+
+        [SerializeField] private float[] frequencyBand;
+        [SerializeField] private float[] bandBuffer;
+        [SerializeField] private float[] bufferDecrease;
+        [SerializeField] private float[] freqBandHighest;
 
         private float amplitudeHighest;
 
-        [Range(0, 512)]
-        public int FrequencyBands = 8;
+
+        [Range(0, 512)] public int FrequencyBands = 8;
         public float AudioProfile;
 
         public enum Channel

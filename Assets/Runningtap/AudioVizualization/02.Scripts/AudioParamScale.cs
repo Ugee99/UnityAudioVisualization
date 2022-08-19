@@ -33,8 +33,12 @@ public class AudioParamScale : MonoBehaviour
 
         switch (scaleDriver)
         {
-            case ScaleDriver.Amplitude: scaleDriver = ScaleDriver.Amplitude; break;
-            case ScaleDriver.AudioBand: scaleDriver = ScaleDriver.AudioBand; break;
+            case ScaleDriver.Amplitude:
+                scaleDriver = ScaleDriver.Amplitude;
+                break;
+            case ScaleDriver.AudioBand:
+                scaleDriver = ScaleDriver.AudioBand;
+                break;
         }
     }
 
